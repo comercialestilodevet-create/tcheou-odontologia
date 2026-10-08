@@ -1,0 +1,21 @@
+/* High-ticket interaction layer — intentionally subtle. */
+:root{--premium-line:rgba(27,37,36,.10)}
+::selection{background:#08a6b5;color:#fff}
+body{overflow-x:hidden}
+.header{will-change:background-color,box-shadow,backdrop-filter}
+.header.scrolled{padding-block:11px}
+.nav a{position:relative}
+.nav a:after{content:"";position:absolute;left:0;right:100%;bottom:-7px;height:1px;background:var(--aqua);transition:right .35s cubic-bezier(.2,.7,.2,1)}
+.nav a:hover:after,.nav a.active:after{right:0}
+.btn{isolation:isolate;overflow:hidden}
+.btn:before{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 25%,rgba(255,255,255,.20) 46%,transparent 66%);transform:translateX(-130%);transition:transform .7s ease;z-index:-1}
+.btn:hover:before{transform:translateX(130%)}
+.hero-copy,.hero-art{will-change:transform}
+.portrait-card>img{transition:transform 1s cubic-bezier(.2,.7,.2,1),box-shadow .6s ease}
+.portrait-card:hover>img{transform:scale(1.018);box-shadow:0 32px 90px rgba(27,25,20,.17)}
+.card{will-change:transform,box-shadow}
+.trust article,.credentials div,.review,.address{transition:border-color .35s ease,background-color .35s ease,transform .35s cubic-bezier(.2,.7,.2,1)}
+.trust article:hover,.credentials div:hover{transform:translateY(-3px);border-color:rgba(8,166,181,.20)}
+#scrollProgress{position:fixed;top:0;left:0;width:0;height:2px;background:var(--aqua);z-index:120;transform-origin:left;box-shadow:0 0 14px rgba(8,166,181,.45)}
+@media(max-width:980px){.nav a:after{display:none}}
+@media(prefers-reduced-motion:reduce){.portrait-card>img,.btn:before{transition:none}.portrait-card:hover>img{transform:none}}
