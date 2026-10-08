@@ -6,7 +6,7 @@ STATE: GITHUB MAIN RECONCILED AND VERIFIED AS CURRENT PRODUCTION CANDIDATE; VERC
 MODE: ADVANCE
 CANONICAL SOURCE: https://github.com/comercialestilodevet-create/tcheou-odontologia
 
-CURRENT VERSION / HEAD: 8281d102e0c369344e352fe8f7c45f7e3d9bbf23
+CURRENT VERSION / HEAD: e79ce204ab5b23ebd39d1866dbc65bcb4c47498e
 BASE: master brief + full conversation history + current GitHub files
 BRANCH / ENV: main / static site
 PR / MR / TASK: none open
