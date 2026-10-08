@@ -1,0 +1,8 @@
+{
+  "name": "tcheou-odontologia",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "validate": "node scripts/validate.mjs"
+  }
+}
