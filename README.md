@@ -68,5 +68,5 @@ O projeto é estático e pode ser importado diretamente na Vercel. Não há nece
 
 **GitHub:** código em `main`  
 **Vercel:** ainda não publicado  
-**Design:** em refinamento final  
+**Design:** release candidate high-ticket  
 **Release público:** aguardando gates da clínica
