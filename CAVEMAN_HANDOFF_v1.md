@@ -1,54 +1,47 @@
 # CAVEMAN HANDOFF v1
 
 APP: Tcheou Odontologia landing page
-WORKSTREAM: Premium/high-ticket institutional landing page + GitHub publication
-STATE: GITHUB REPOSITORY EXISTS AND SITE FILES ARE BEING PUBLISHED; VERCEL NOT YET VERIFIED
+WORKSTREAM: Premium institutional site and GitHub publication
+STATE: SITE SOURCE COMMITTED TO PUBLIC GITHUB MAIN; LIVE DEPLOYMENT NOT VERIFIED
 MODE: RESUME
-CANONICAL SOURCE: GitHub repository + client master prompt + project research notes
+CANONICAL SOURCE: GitHub repository and committed source files
 
-CURRENT VERSION / HEAD: pending final remote verification
-BASE: client master prompt and previously validated project direction
-BRANCH / ENV: main / static Vercel-ready
+CURRENT VERSION / HEAD: 22bb946586c3121d1434f4b1351bf112016d7822 (verify again on resume)
+BASE: project brief and prior local build
+BRANCH / ENV: main / static website
 PR / MR / TASK: none
-SPEC / ADR: project brief + RESEARCH_NOTES.md
+SPEC / ADR: README.md + RESEARCH_NOTES.md
 
 DONE:
-- Premium single-page structure
-- Responsive navigation and mobile menu
-- Scroll reveal and reduced-motion support
-- WhatsApp booking modal
-- FAQ accordion
-- Local SEO/meta/JSON-LD/robots/sitemap
-- Tijuca address, phone, Instagram and WhatsApp CTA
-- Repository created and code publication initiated
+- Repository created: https://github.com/comercialestilodevet-create/tcheou-odontologia
+- index.html, css/style.css, js/script.js
+- SVG brand placeholder and favicon
+- Responsive layout, treatments, location, FAQ, WhatsApp booking modal
+- robots.txt, sitemap.xml, vercel.json, research notes
 
 VERIFY:
-- Remote main HEAD and file tree
-- JavaScript syntax
-- Responsive 360/768/1024/desktop
-- External links and WhatsApp
-- Vercel deployment
-- Final credential/CRO validation
+- Re-fetch remote HEAD/tree before next work
+- Run JavaScript syntax and static-link checks
+- Check live Vercel deployment; not verified in this session
 
 GATES:
-- Confirm professional credentials/specialties/CRO before public launch
-- Confirm domain/canonical URL
-- Replace placeholder visual with client-approved professional photo
+- Confirm CRO, credentials and specialties with official documentation
+- Replace illustrative portrait placeholder with client-approved professional photo
+- Confirm domain/canonical URL before launch
 
 BLOCKERS:
-- None for GitHub once final upload completes
-- Vercel/domain verification pending
+- Public website deployment/domain not confirmed
+- Original professional photo has not been uploaded; current visual is clearly an illustrative placeholder
 
 INVARIANTS:
-- Never invent professional credentials or clinical claims.
+- Do not invent credentials or clinical claims.
 - Current address remains Titanium Offices Tijuca.
 - WhatsApp remains the primary conversion channel.
 
 NEXT:
-Verify remote files/HEAD and deployment state; then fix only evidence-backed failures.
+- Validate repo files/JS; connect repository to Vercel or verify existing project/deployment.
 
 VERIFY-FIRST:
-1. Fetch repository metadata.
-2. Inspect main HEAD and expected file tree.
-3. Check branch/PR state before creating anything new.
-4. Validate site and deployment.
+1. Check repository metadata, main HEAD and file tree.
+2. Inspect deployment status before starting a new workstream.
+3. Validate site and fix only evidence-backed issues.
