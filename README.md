@@ -1,52 +1,72 @@
-# Tcheou Odontologia
+# TCHEOU ODONTOLOGIA
 
-Landing page institucional premium da Tcheou Odontologia, Tijuca — Rio de Janeiro.
+Landing page institucional premium para a Tcheou Odontologia — Tijuca, Rio de Janeiro.
 
-## Direção
+> **Excelência não é detalhe. É o padrão.**
 
-Projeto pensado para elevar percepção de valor, confiança e conversão, com uma experiência editorial e contemporânea em vez de um catálogo genérico de procedimentos.
+## Visão do projeto
 
-A arquitetura prioriza:
+A experiência foi desenhada para posicionar o consultório como uma operação odontológica boutique: mais editorial, menos “site de dentista”. O conteúdo combina confiança, acolhimento, precisão e uma jornada de conversão curta até o WhatsApp.
 
-- narrativa de marca e posicionamento;
-- conversão por WhatsApp;
-- experiência mobile-first;
-- prova social sem promessas clínicas indevidas;
-- SEO local e dados estruturados;
-- acessibilidade e suporte a reduced motion;
-- publicação estática, sem backend e pronta para Vercel.
+### Direção de design
 
-## Stack
+- Off-white como base, madeira como elemento de sofisticação e turquesa como assinatura.
+- Tipografia contemporânea com contraste editorial.
+- Ritmo de espaçamento amplo, bordas generosas e sombras discretas.
+- Microinterações que reforçam profundidade sem deixar o site “barulhento”.
+- Mobile-first e suporte a `prefers-reduced-motion`.
 
-HTML semântico + CSS moderno + JavaScript vanilla.
+### Jornada de conversão
 
-A solução é propositalmente leve: não depende de framework ou biblioteca externa para o funcionamento principal da experiência.
+**Descobrir → confiar → entender → localizar → conversar → agendar**
 
-## Estrutura
+O WhatsApp é o canal principal. O formulário não possui backend: ele apenas compõe uma mensagem e abre o canal oficial de atendimento.
+
+## Arquitetura
 
 ```text
 .
+├── .github/workflows/quality.yml
 ├── assets/
 │   ├── favicon.svg
 │   └── tcheou-portrait.svg
-├── css/
-│   └── style.css
-├── js/
-│   └── script.js
+├── css/style.css
+├── js/script.js
+├── docs/
+│   ├── BRAND_SYSTEM.md
+│   └── LAUNCH_CHECKLIST.md
 ├── index.html
+├── 404.html
 ├── robots.txt
 ├── sitemap.xml
-└── vercel.json
+├── site.webmanifest
+├── vercel.json
+└── RESEARCH_NOTES.md
 ```
 
-## Conversão
+## Qualidade
 
-O CTA principal abre um modal de agendamento com poucos campos e prepara uma mensagem para o WhatsApp da clínica. Não existe backend próprio e o formulário não armazena dados.
+A qualidade é tratada como parte do produto, não como etapa final. O workflow do GitHub valida a integridade básica do HTML, verifica a sintaxe JavaScript e procura referências locais quebradas.
 
-## Antes do lançamento
+## Conteúdo e compliance
 
-Confirmar os dados profissionais oficiais, CRO, especialidades e qualificações, horários e domínio definitivo com a clínica. A seção visual da profissional também deve receber uma fotografia aprovada quando esse ativo estiver disponível.
+O projeto não deve inventar CRO, títulos, certificações, preços, horários, equipe, equipamentos, resultados clínicos ou promessas. Dados profissionais e ativos visuais devem ser confirmados pela clínica antes do lançamento público.
 
 ## Deploy
 
-O repositório pode ser importado diretamente na Vercel como site estático, sem etapa de build adicional.
+O projeto é estático e pode ser importado diretamente na Vercel. Não há necessidade de backend ou etapa de build.
+
+## Próximos gates
+
+1. Aprovar foto profissional definitiva.
+2. Confirmar credenciais profissionais e CRO.
+3. Confirmar domínio/canonical definitivo.
+4. Fazer QA final em 360, 768, 1024 e desktop.
+5. Só então publicar na Vercel.
+
+## Status
+
+**GitHub:** código em `main`  
+**Vercel:** ainda não publicado  
+**Design:** em refinamento final  
+**Release público:** aguardando gates da clínica
