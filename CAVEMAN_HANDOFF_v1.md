@@ -2,58 +2,59 @@
 
 APP: Tcheou Odontologia
 WORKSTREAM: Premium landing page — responsive 4K image integration
-STATE: IMAGE ASSETS PREPARED AND WIRED INTO THE SITE; IMAGE RELEASE COMMIT CREATED ON MAIN; POST-COMMIT QUALITY GATE MUST BE VERIFIED; VERCEL NOT STARTED
-MODE: WATCH
+STATE: IMAGE RELEASE COMMITTED; QUALITY GATE AND GITHUB PAGES DEPLOYMENT PASSED FOR IMAGE RELEASE COMMIT; VERCEL NOT STARTED
+MODE: ADVANCE
 CANONICAL SOURCE: https://github.com/comercialestilodevet-create/tcheou-odontologia
 
-CURRENT VERSION / HEAD: main tip must be read dynamically; base HEAD verified before this image release: eeec33d1996377455969c4732e6ebce662a23bd3
-BASE: eeec33d1996377455969c4732e6ebce662a23bd3
-BRANCH / ENV: main / static site
-PR / MR / TASK: no PR open; direct continuation of existing main workstream
+CURRENT VERSION / HEAD: Re-read main tip on resume. Last verified image release commit: 2b94e936fc3389a9fa6f1dccfb10293399d43032.
+BASE: 2b94e936fc3389a9fa6f1dccfb10293399d43032
+BRANCH / ENV: main / static site with GitHub Pages preview
+PR / MR / TASK: no PR open; existing main workstream
 SPEC / ADR: README.md; docs/BRAND_SYSTEM.md; docs/LAUNCH_CHECKLIST.md; docs/IMAGE_QUALITY.md
 
 DONE:
-- Premium landing page and existing responsive interaction layer retained.
-- Added 4K-class WebP variants for the clinical banner, professional portrait, and Instagram educational artwork.
-- Added 1200px responsive counterparts and srcset/sizes declarations.
-- Added dedicated image-quality stylesheet and editorial Instagram content section.
-- Kept official SVG logo as vector; no generated replacement portrait used.
-- Added documentation distinguishing upscaled output from native source resolution.
+- Added responsive WebP variants for clinical banner, Dra. Cintia portrait, and educational Instagram artwork.
+- 4K-class files are included at assets/images/*-4k.webp; 1200px responsive variants are included.
+- Updated index.html with srcset/sizes and added the Instagram editorial section.
+- Added css/image-quality.css and docs/IMAGE_QUALITY.md.
+- Preserved the official SVG logo and the real supplied photos/artwork; no generated replacement portrait was used.
+- Asset pack created and integrity-checked locally: Tcheou_Odontologia_Imagens_4K.zip.
 
 VERIFY:
-- HTML anchors and replacements verified before commit.
-- All referenced image paths are part of this release tree.
-- Confirm the newest GitHub Actions Quality Gate after this commit.
-- Inspect the deployed preview visually if GitHub Pages is active.
-- Do not describe the upscaled files as native-capture 4K.
+- Image release commit: 2b94e936fc3389a9fa6f1dccfb10293399d43032.
+- Quality Gate run 38945662945: success.
+- GitHub Pages build/deployment run 38945662333: success.
+- Verified all six referenced image paths and css/image-quality.css exist in the repository tree.
+- Manually checked src/srcset references from index.html; no missing image paths.
+- 4K outputs were upscaled from smaller supplied files; do not describe them as native capture resolution.
 
 GATES:
-- Final clinic/team approval of copy and photo.
-- Official verification of CRO/credentials.
-- Confirm phone, WhatsApp, Instagram and hours.
-- Confirm final domain/canonical.
+- Final clinic/team visual approval.
+- Official verification of CRO and credentials.
+- Confirm phone, WhatsApp, Instagram, hours and final canonical/domain.
 - Visual QA sign-off.
-- Only then start Vercel deployment after explicit user advancement.
+- Only then start Vercel deployment, after explicit user advancement.
 
 BLOCKERS:
 - No implementation blocker for the image release.
-- True native 4K detail requires original high-resolution source captures.
-- Vercel intentionally pending.
+- True native 4K detail requires original high-resolution camera/export files.
+- Vercel intentionally pending team approval.
 
 INVARIANTS:
-- GitHub main remains canonical before Vercel.
+- GitHub main is canonical before Vercel.
 - Do not start Vercel deployment without explicit user approval.
 - Do not invent professional credentials or clinical claims.
 - Never declare a live deployment without evidence.
-- Keep supplied identity, faces, logo, and typography faithful; avoid generative substitutions.
+- Keep supplied identity, faces, logo, and typography faithful.
 
 NEXT:
-- WATCH the Quality Gate for the image release and fix actual failures if any.
-- If CI passes, classify ADVANCE and wait for clinic/team approval before Vercel.
+- Present the updated GitHub Pages preview and asset pack to the clinic/team.
+- Apply only feedback that the team approves.
+- After visual/content gates pass, proceed to Vercel only when the user explicitly advances.
 
 VERIFY-FIRST:
-1. Read current main ref and latest commit; do not assume the recorded base SHA remains HEAD.
-2. Check open PRs/issues and the latest workflow run.
-3. Confirm assets exist in assets/images/ and inspect index.html + css/image-quality.css.
-4. Re-run static validation and inspect the preview if available.
-5. Keep Vercel unchanged until the user explicitly advances.
+1. Read the latest main ref/HEAD and tree; the listed SHA is a previous verified checkpoint, not a substitute for querying current state.
+2. Check open PRs/issues and the latest Quality Gate and Pages deployment runs for the current HEAD.
+3. Confirm assets/images/*-4k.webp and srcset paths remain present.
+4. Inspect the preview visually when accessible.
+5. Do not deploy to Vercel until the team approval gate is explicitly cleared.
