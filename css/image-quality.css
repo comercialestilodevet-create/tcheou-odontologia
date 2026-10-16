@@ -22,3 +22,16 @@
 @media(max-width:900px){.social-editorial-grid{grid-template-columns:1fr;gap:38px}.social-editorial-copy{max-width:680px}.social-editorial-visual{width:min(340px,82vw)}}
 @media(max-width:600px){.portrait-card{padding:14px 15px 18px 12px}.portrait-card:before{inset:0 20px 26px 0}.portrait-card>img.hero-clinical-image{border-radius:23px}.portrait-card .floating{padding:18px;width:min(270px,94%)}.social-editorial{padding:72px 0}.social-editorial-copy h2{font-size:clamp(35px,10vw,48px)}.social-editorial-copy>p:not(.kicker){font-size:14px}.social-editorial-caption{font-size:8px}}
 @media(prefers-reduced-motion:reduce){.social-editorial-poster,.social-editorial-poster img{transition:none}.social-editorial-poster:hover{transform:none}.social-editorial-poster:hover img{transform:none}}
+
+/* Finishing pass: keep the brand-led layout coherent across the preview and production. */
+.portrait-card .floating{background:rgba(255,255,255,.96);border-color:rgba(16,182,206,.14)}
+.proof-mark{display:grid;place-items:center;flex:0 0 38px;width:38px;height:38px;border:1px solid rgba(16,182,206,.32);border-radius:50%;color:var(--aqua);font-size:23px}
+.review-label{display:block;color:#7fe2ec;font:800 9px/1.4 "DM Sans",sans-serif;letter-spacing:.18em}
+.review-metrics strong{font-size:clamp(14px,1.5vw,19px);letter-spacing:-.025em}
+.review-metrics span{font-size:10px;line-height:1.5}
+.map{min-height:440px;background:#eaf1f4}
+.map iframe{display:block;width:100%;height:100%;min-height:440px;border:0}
+.menu-btn.open i:first-child{top:19px;transform:rotate(45deg)}
+.menu-btn.open i:last-child{top:19px;transform:rotate(-45deg)}
+@media(max-width:640px){.map,.map iframe{min-height:320px}.review-metrics div{padding:13px 8px}.review-metrics strong{font-size:13px}.review-metrics span{font-size:9px}}
+@media(prefers-reduced-motion:reduce){.menu-btn i{transition:none}}
