@@ -1,61 +1,47 @@
-# CAVEMAN HANDOFF v1
+# Tcheou Odontologia — Project Handoff
 
 APP: Tcheou Odontologia
-WORKSTREAM: Premium landing page — responsive 4K image integration
-STATE: HOMEPAGE LOGO PROPORTIONS REFINED; SOURCE-LEVEL QA PASSED; CI/PAGES STATUS FOR LATEST HEAD UNVERIFIED
+WORKSTREAM: Premium static landing page
+STATE: GITHUB PAGES DEPLOYED; SOURCE-LEVEL QA PASSED; FINAL BROWSER/CLINIC APPROVAL PENDING
 MODE: WATCH
 CANONICAL SOURCE: https://github.com/comercialestilodevet-create/tcheou-odontologia
+LIVE PREVIEW: https://comercialestilodevet-create.github.io/tcheou-odontologia/
+BRANCH / HOSTING: main / GitHub Pages (repository root)
+LATEST VERIFIED PAGES + QUALITY RUN: 38949582445 / 38949584418
+LATEST VERIFIED COMMIT AT THAT RUN: 8a759e1b819759c87700e6d537a8b4c323900c56
 
-LATEST HOMEPAGE CHANGE: 92cb710e99dc6c6794a3a5247d3f98d801d20f6a (logo proportions); query main HEAD again on resume
-BASE: 2b94e936fc3389a9fa6f1dccfb10293399d43032
-BRANCH / ENV: main / static site with GitHub Pages preview
-PR / MR / TASK: no PR open; existing main workstream
-SPEC / ADR: README.md; docs/BRAND_SYSTEM.md; docs/LAUNCH_CHECKLIST.md; docs/IMAGE_QUALITY.md
+## DONE
+- Responsive WebP variants for the clinical banner, Dra. Cintia portrait, and clinic Instagram artwork are integrated.
+- Both clinic logo SVG variants have been reframed to better match the supplied logo reference, while preserving the tooth mark, cross, wordmark, and colors.
+- The distinct client-provided contact destinations are preserved: phone +55 21 97303-9005 and booking WhatsApp 5521999988183.
+- Source-level checks passed for the homepage HTML structure, unique IDs, anchors, JSON-LD, manifest, JavaScript parsing, CSS brace balance, and local asset paths.
+- The GitHub Pages build and deploy jobs succeeded for the verified commit listed above.
+- The Quality Gate succeeded for that same commit.
+- Repository documentation now identifies GitHub Pages as the sole hosting and publishing path.
 
-DONE:
-- Added responsive WebP variants for clinical banner, Dra. Cintia portrait, and educational Instagram artwork.
-- 4K-class files are included at assets/images/*-4k.webp; 1200px responsive variants are included.
-- Updated index.html with srcset/sizes and added the Instagram editorial section.
-- Added css/image-quality.css and docs/IMAGE_QUALITY.md.
-- Preserved the supplied clinic logo artwork and refined the viewBox/underline proportions in both SVG logo variants to better match the supplied reference.
-- Kept the distinct client-provided contacts intact: telephone +55 21 97303-9005 and booking WhatsApp 5521999988183.
-- Source-level QA on current homepage: one H1, unique IDs, valid in-page anchors, valid JSON-LD/manifest, JS parse, and balanced CSS braces passed.
-- Asset pack created and integrity-checked locally: Tcheou_Odontologia_Imagens_4K.zip.
+## IMPORTANT LIMITS
+- The direct preview link is available for review. It keeps `noindex,follow` until the clinic approves public discovery.
+- The image files labelled 4K are upscaled outputs from smaller supplied sources, not native 4K captures.
+- Clinic/team visual approval and professional credential confirmation remain outstanding.
+- The live page was not independently rendered in a browser during this session; do not claim the final browser visual review is complete.
 
-VERIFY:
-- Image release commit: 2b94e936fc3389a9fa6f1dccfb10293399d43032.
-- Historical Quality Gate run 38945662945 and Pages run 38945662333 were successful for the earlier image release.
-- Latest-head CI and Pages deployment were not independently verified in this session; do not infer success.
-- Verified all six referenced image paths and css/image-quality.css exist in the repository tree.
-- Manually checked src/srcset references from index.html; no missing image paths.
-- 4K outputs were upscaled from smaller supplied files; do not describe them as native capture resolution.
+## INVARIANTS
+- GitHub `main` is the canonical source.
+- Publish through GitHub Pages only.
+- Do not add unverified credentials or clinical claims.
+- Preserve the supplied identity, faces, logo, and typography.
+- Do not remove `noindex` before explicit approval of public release.
+- Never declare browser validation complete without checking the rendered page.
 
-GATES:
-- Final clinic/team visual approval.
-- Official verification of CRO and credentials.
-- Confirm phone and WhatsApp remain the intended separate destinations, plus Instagram, hours and final canonical/domain.
-- Browser/visual QA and latest-head CI/Pages status sign-off.
-- Only then start Vercel deployment, after explicit user advancement.
+## NEXT
+1. Verify the latest Quality Gate and Pages deployment runs after the documentation cleanup.
+2. Open the preview link and complete visual QA on mobile and desktop.
+3. Obtain the clinic's approval for credentials and public content.
+4. Remove `noindex` only after that approval.
 
-BLOCKERS:
-- No implementation blocker for the image release.
-- True native 4K detail requires original high-resolution camera/export files.
-- Vercel intentionally pending; user requested GitHub-only work.
-
-INVARIANTS:
-- GitHub main is canonical before Vercel.
-- Do not start Vercel deployment without explicit user approval.
-- Do not invent professional credentials or clinical claims.
-- Never declare a live deployment without evidence.
-- Keep supplied identity, faces, logo, and typography faithful.
-
-NEXT:
-- Check GitHub Pages deployment run for current HEAD and preview the site when accessible.
-- Continue only with visual/technical refinements requested by the user; do not add content or deploy to Vercel.
-
-VERIFY-FIRST:
-1. Read the latest main ref/HEAD and tree; the listed SHA is a previous verified checkpoint, not a substitute for querying current state.
-2. Check open PRs/issues and the latest Quality Gate and Pages deployment runs for the current HEAD.
-3. Confirm assets/images/*-4k.webp and srcset paths remain present.
-4. Inspect the preview visually when accessible.
-5. Do not deploy to Vercel until the team approval gate is explicitly cleared.
+## VERIFY-FIRST
+1. Re-read latest `main` HEAD.
+2. Check the latest `pages build and deployment` and `Quality Gate` runs.
+3. Confirm local assets and responsive `srcset` paths.
+4. Open the public preview if the browser/network environment permits.
+5. Do not call the release fully approved until clinic content and browser checks are complete.
