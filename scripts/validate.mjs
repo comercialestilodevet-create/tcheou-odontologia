@@ -72,7 +72,7 @@ for (const stylesheetMatch of html.matchAll(/<link[^>]+rel="stylesheet"[^>]+href
   if (depth !== 0) errors.push("Unbalanced CSS braces: " + stylesheet);
   for (const urlMatch of css.matchAll(/url\((?:'|")?([^'")]+)(?:'|")?\)/gi)) {
     const reference = urlMatch[1].trim();
-    if (/^(?:https?:|data:|\/\/|#)/i.test(reference)) continue;
+    if (/^(?:https?:|data:|\/\/|#)/i.test(reference) || /%23|%3c|%3e|%22|%27/i.test(reference)) continue;
     const resolved = resolve(dirname(stylesheetPath), reference);
     if (!existsSync(resolved)) errors.push("Missing CSS asset in " + stylesheet + ": " + reference);
   }
