@@ -10,7 +10,8 @@ A experiência foi desenhada para posicionar o consultório como uma operação 
 
 ### Direção de design
 
-- Off-white como base, madeira como elemento de sofisticação e turquesa como assinatura.
+- Identidade derivada da logo oficial fornecida: dente em traço turquesa, wordmark cinza e azul-neblina.
+- Turquesa #10B6CE, cinza #73787B e superfícies claras azuladas como assinatura visual.
 - Tipografia contemporânea com contraste editorial.
 - Ritmo de espaçamento amplo, bordas generosas e sombras discretas.
 - Microinterações que reforçam profundidade sem deixar o site “barulhento”.
