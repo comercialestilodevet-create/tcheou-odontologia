@@ -8,7 +8,7 @@
   const bookingForm = $('#bookingForm');
   const nameField = $('#name');
   const progress = $('#scrollProgress');
-  const whatsappNumber = '5521973039005';
+  const whatsappNumber = '5521999988183';
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   let lastFocusedElement = null;
   let scrollUpdateQueued = false;
