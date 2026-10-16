@@ -19,3 +19,45 @@ body{overflow-x:hidden}
 #scrollProgress{position:fixed;top:0;left:0;width:0;height:2px;background:var(--aqua);z-index:120;transform-origin:left;box-shadow:0 0 14px rgba(8,166,181,.45)}
 @media(max-width:980px){.nav a:after{display:none}}
 @media(prefers-reduced-motion:reduce){.portrait-card>img,.btn:before{transition:none}.portrait-card:hover>img{transform:none}}
+/* Tcheou signature system — inspired by the supplied clinic wordmark */
+:root{
+ --paper:#f5f8fa;--sand:#eaf1f4;--ink:#424b50;--muted:#78858b;
+ --wood:#46545b;--aqua:#10b6ce;--aqua2:#078fa7;--white:#ffffff;
+ --line:rgba(76,99,108,.16);--shadow:0 24px 70px rgba(54,83,94,.12);
+ --brand-turquoise:#10b6ce;--brand-grey:#73787b;--brand-mist:#e9f1f5;
+}
+body{background:var(--paper);color:var(--ink)}
+.header.scrolled{background:rgba(245,248,250,.9);border-bottom:1px solid rgba(16,182,206,.12)}
+.brand{min-width:220px}
+.brand-logo{width:204px;max-height:58px;object-fit:contain}
+.hero{background:radial-gradient(ellipse at 16% 8%,rgba(255,255,255,.98),transparent 43%),linear-gradient(125deg,#f5f8fa 0%,#eaf2f6 66%,#e3edf2 100%)}
+.wood{right:-5%;width:34%;background:linear-gradient(145deg,#d9e8ee,#c3d9e2);border-radius:0 0 0 100px;opacity:.82}
+.wood:after{background:repeating-linear-gradient(90deg,transparent 0 46px,rgba(255,255,255,.24) 47px 49px,transparent 50px 88px)}
+.hero h1 em,h2 em{color:#10b6ce}
+.eyebrow,.kicker,.card>span,.floating small{color:#078fa7}
+.eyebrow span{background:#10b6ce}
+.btn-accent{background:#10b6ce;box-shadow:0 14px 30px rgba(16,182,206,.2)}
+.btn-accent:hover{background:#078fa7}
+.floating{background:rgba(255,255,255,.93);border:1px solid rgba(16,182,206,.12)}
+.floating b{color:#46545b}
+.portrait-card:before{border-color:rgba(16,182,206,.24);border-radius:42px}
+.portrait-card>img{border-radius:42px}
+.orbit{border-color:rgba(16,182,206,.32);color:#10b6ce}
+.trust,.trust article{border-color:var(--line)}
+.trust article:hover,.credentials div:hover{border-color:rgba(16,182,206,.34)}
+.sand{background:linear-gradient(135deg,#edf3f6,#e7f0f4)}
+.card{background:rgba(255,255,255,.78);border-color:rgba(95,125,136,.15);border-radius:28px}
+.card.feature{background:linear-gradient(145deg,#43535a,#5d737b);border-color:transparent}
+.card.feature p{color:rgba(255,255,255,.78)}
+.card a,.card i{color:#10b6ce}
+.experience{background:linear-gradient(125deg,#43545b,#5c737c)}
+.experience:before{background:radial-gradient(ellipse at 85% 15%,rgba(16,182,206,.16),transparent 45%),repeating-linear-gradient(90deg,rgba(255,255,255,.025) 0 18px,transparent 18px 46px)}
+.experience h2 em{color:#6ee3ee}
+.review{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.2)}
+blockquote:before{color:#10b6ce}
+#scrollProgress{background:#10b6ce;box-shadow:0 0 14px rgba(16,182,206,.42)}
+::selection{background:#10b6ce;color:#fff}
+.address,.credentials div{border-color:var(--line)}
+footer{background:#e8f0f4;color:#46545b}
+footer a{color:inherit}
+@media(max-width:640px){.brand-logo{width:174px;max-height:50px}.wood{width:24%;opacity:.45}.hero{background:linear-gradient(145deg,#f7fafb,#e8f1f5)}}
