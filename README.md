@@ -4,24 +4,31 @@ Landing page institucional premium para a Tcheou Odontologia — Tijuca, Rio de 
 
 > **Excelência não é detalhe. É o padrão.**
 
+## Visualizar o site
+
+**Prévia publicada pelo GitHub Pages:** https://comercialestilodevet-create.github.io/tcheou-odontologia/
+
+A hospedagem e a publicação deste projeto são feitas pelo GitHub Pages. A branch `main` é a fonte do site e as atualizações são publicadas pelo fluxo do próprio GitHub Pages. Não há configuração de hospedagem externa necessária.
+
+A prévia mantém `noindex,follow` enquanto a clínica conclui a aprovação de conteúdo; isso não impede o acesso direto pelo link acima.
+
 ## Visão do projeto
 
-A experiência foi desenhada para posicionar o consultório como uma operação odontológica boutique: mais editorial, menos “site de dentista”. O conteúdo combina confiança, acolhimento, precisão e uma jornada de conversão curta até o WhatsApp.
+A experiência posiciona o consultório como uma operação odontológica boutique: editorial, acolhedora e focada numa jornada curta até o agendamento pelo WhatsApp.
 
 ### Direção de design
 
-- Identidade derivada da logo oficial fornecida: dente em traço turquesa, wordmark cinza e azul-neblina.
-- Turquesa #10B6CE, cinza #73787B e superfícies claras azuladas como assinatura visual.
-- Tipografia contemporânea com contraste editorial.
-- Ritmo de espaçamento amplo, bordas generosas e sombras discretas.
-- Microinterações que reforçam profundidade sem deixar o site “barulhento”.
-- Mobile-first e suporte a `prefers-reduced-motion`.
+- Identidade baseada na marca fornecida: dente em traço turquesa, wordmark cinza e azul-neblina.
+- Turquesa `#10B6CE`, cinza `#73787B` e superfícies azuladas claras.
+- Tipografia contemporânea, composição editorial e espaços generosos.
+- Animações discretas com suporte a `prefers-reduced-motion`.
+- Layout responsivo e imagens WebP com variantes para diferentes densidades de tela.
 
 ### Jornada de conversão
 
 **Descobrir → confiar → entender → localizar → conversar → agendar**
 
-O WhatsApp é o canal principal. O formulário não possui backend: ele apenas compõe uma mensagem e abre o canal oficial de atendimento.
+O WhatsApp é o canal de agendamento. O telefone para ligação e o WhatsApp de agendamento são mantidos como destinos separados, conforme os dados fornecidos para o projeto.
 
 ## Arquitetura
 
@@ -30,48 +37,50 @@ O WhatsApp é o canal principal. O formulário não possui backend: ele apenas c
 ├── .github/workflows/quality.yml
 ├── assets/
 │   ├── favicon.svg
-│   └── tcheou-portrait.svg
-├── css/style.css
-├── js/script.js
+│   ├── logo-tcheou-dark.svg
+│   ├── logo-tcheou-light.svg
+│   └── images/
+├── css/
+│   ├── style.css
+│   ├── premium.css
+│   └── image-quality.css
 ├── docs/
 │   ├── BRAND_SYSTEM.md
+│   ├── IMAGE_QUALITY.md
 │   └── LAUNCH_CHECKLIST.md
+├── js/script.js
+├── scripts/validate.mjs
 ├── index.html
 ├── 404.html
 ├── robots.txt
 ├── sitemap.xml
-├── site.webmanifest
-├── vercel.json
-└── RESEARCH_NOTES.md
+└── site.webmanifest
 ```
 
 ## Qualidade
 
-A qualidade é tratada como parte do produto, não como etapa final. O workflow do GitHub valida a integridade básica do HTML, verifica a sintaxe JavaScript e procura referências locais quebradas.
+O workflow **Quality Gate** roda em atualizações da branch principal e valida estrutura HTML, âncoras, arquivos locais, CSS, JavaScript, dados estruturados e manifest.
 
 ## Conteúdo e compliance
 
-O projeto não deve inventar CRO, títulos, certificações, preços, horários, equipe, equipamentos, resultados clínicos ou promessas. Dados profissionais e ativos visuais devem ser confirmados pela clínica antes do lançamento público.
+Não inventar CRO, títulos, certificações, horários, equipe, equipamentos, preços, resultados clínicos ou promessas. As credenciais profissionais, dados de contato e demais informações devem ser confirmados pela clínica antes da divulgação definitiva.
 
-## Imagens de alta resolução
+## Imagens
 
-The site includes responsive WebP image sources and portrait/vertical artwork with 4K-class long-edge dimensions. See `docs/IMAGE_QUALITY.md` for source dimensions, output dimensions, and the distinction between upscaled output and native capture resolution.
+As variantes `*-4k.webp` têm dimensões de saída grandes, mas foram ampliadas a partir de fontes menores. O redimensionamento não recria detalhe nativo; ver `docs/IMAGE_QUALITY.md`.
 
-## Deploy
+## Status atual
 
-O projeto é estático e pode ser importado diretamente na Vercel. Não há necessidade de backend ou etapa de build.
+- **Código:** branch `main` do GitHub.
+- **Hospedagem:** GitHub Pages.
+- **Prévia:** [abrir Tcheou Odontologia](https://comercialestilodevet-create.github.io/tcheou-odontologia/).
+- **Validação:** ver os workflows mais recentes na aba [Actions](https://github.com/comercialestilodevet-create/tcheou-odontologia/actions).
+- **Indexação:** desativada na prévia até aprovação do conteúdo pela clínica.
 
-## Próximos gates
+## Próximas validações da clínica
 
-1. Aprovar foto profissional definitiva.
-2. Confirmar credenciais profissionais e CRO.
-3. Confirmar domínio/canonical definitivo.
-4. Fazer QA final em 360, 768, 1024 e desktop.
-5. Só então publicar na Vercel.
-
-## Status
-
-**GitHub:** código em `main`  
-**Vercel:** ainda não publicado  
-**Design:** release candidate high-ticket  
-**Release público:** aguardando gates da clínica
+1. Aprovar foto e identidade visual.
+2. Confirmar credenciais profissionais e CRO em fonte oficial.
+3. Confirmar telefone, WhatsApp, Instagram, endereço e horário.
+4. Fazer conferência visual final em celular e desktop.
+5. Remover o `noindex` somente depois da aprovação expressa da divulgação pública.
