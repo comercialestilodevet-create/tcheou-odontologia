@@ -2,11 +2,11 @@
 
 APP: Tcheou Odontologia
 WORKSTREAM: Premium landing page — responsive 4K image integration
-STATE: IMAGE RELEASE COMMITTED; QUALITY GATE AND GITHUB PAGES DEPLOYMENT PASSED FOR IMAGE RELEASE COMMIT; VERCEL NOT STARTED
-MODE: ADVANCE
+STATE: PREMIUM FINISH PASS COMMITTED TO MAIN; QUALITY GATE PASSED; PAGES DEPLOYMENT QUEUED
+MODE: WATCH
 CANONICAL SOURCE: https://github.com/comercialestilodevet-create/tcheou-odontologia
 
-CURRENT VERSION / HEAD: Re-read main tip on resume. Last verified image release commit: 2b94e936fc3389a9fa6f1dccfb10293399d43032.
+CURRENT VERSION / HEAD: e40efae1f3a58093aca65f26f7d27998407980c7
 BASE: 2b94e936fc3389a9fa6f1dccfb10293399d43032
 BRANCH / ENV: main / static site with GitHub Pages preview
 PR / MR / TASK: no PR open; existing main workstream
@@ -38,7 +38,7 @@ GATES:
 BLOCKERS:
 - No implementation blocker for the image release.
 - True native 4K detail requires original high-resolution camera/export files.
-- Vercel intentionally pending team approval.
+- Vercel intentionally pending; user requested GitHub-only work.
 
 INVARIANTS:
 - GitHub main is canonical before Vercel.
@@ -48,9 +48,8 @@ INVARIANTS:
 - Keep supplied identity, faces, logo, and typography faithful.
 
 NEXT:
-- Present the updated GitHub Pages preview and asset pack to the clinic/team.
-- Apply only feedback that the team approves.
-- After visual/content gates pass, proceed to Vercel only when the user explicitly advances.
+- Check GitHub Pages deployment run for current HEAD and preview the site.
+- Continue only with visual/technical refinements requested by the user; do not add content or deploy to Vercel.
 
 VERIFY-FIRST:
 1. Read the latest main ref/HEAD and tree; the listed SHA is a previous verified checkpoint, not a substitute for querying current state.
