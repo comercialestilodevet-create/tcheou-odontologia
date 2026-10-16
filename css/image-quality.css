@@ -35,3 +35,41 @@
 .menu-btn.open i:last-child{top:19px;transform:rotate(-45deg)}
 @media(max-width:640px){.map,.map iframe{min-height:320px}.review-metrics div{padding:13px 8px}.review-metrics strong{font-size:13px}.review-metrics span{font-size:9px}}
 @media(prefers-reduced-motion:reduce){.menu-btn i{transition:none}}
+
+/* Final refinement: premium finish, accessible focus, and responsive rhythm. */
+:root{--focus-ring:rgba(16,182,206,.56)}
+img,svg{max-width:100%}
+:focus-visible{outline:3px solid var(--focus-ring);outline-offset:4px}
+.skip{z-index:1500;border-radius:10px;box-shadow:0 10px 30px rgba(30,55,64,.16)}
+.header-inner{min-height:56px}
+.brand-logo{width:212px;max-height:62px}
+.nav{align-items:center;gap:clamp(14px,1.6vw,25px)}
+.nav a{white-space:nowrap;font-weight:500;letter-spacing:.005em}
+.desktop-cta{white-space:nowrap}
+.hero-copy{max-width:650px}
+.hero h1{max-width:720px;text-wrap:balance}
+.hero .lead{max-width:540px}
+.portrait-card .floating{background:rgba(255,255,255,.96);border-color:rgba(16,182,206,.14);box-shadow:0 16px 46px rgba(52,83,94,.12)}
+.trust-grid{gap:0}
+.trust article{padding-inline:clamp(12px,2vw,26px)}
+.section-head{align-items:flex-end}
+.card h3{text-wrap:balance}
+.card p{line-height:1.8}
+.review blockquote{line-height:1.26}
+.location .address{background:#fff}
+.map{isolation:isolate}
+.map iframe{display:block;width:100%;height:100%;min-height:440px;border:0;filter:saturate(.72) contrast(.98)}
+.floating-wa{width:58px;height:58px;display:grid;place-items:center}
+.floating-wa svg{display:block;width:25px;height:25px}
+.floating-wa b{position:absolute;right:68px;bottom:7px;padding:9px 12px;border-radius:10px;background:#fff;color:#46545b;font-size:10px;letter-spacing:.02em;white-space:nowrap;box-shadow:0 8px 26px rgba(30,55,64,.12);opacity:0;transform:translateX(4px);transition:opacity .2s ease,transform .2s ease;pointer-events:none}
+.floating-wa:hover b,.floating-wa:focus-visible b{opacity:1;transform:none}
+.modal-card{border:1px solid rgba(16,182,206,.14)}
+.modal-card h2{text-wrap:balance}
+.modal label{display:block;line-height:1.5}
+.modal input,.modal select,.modal textarea{font-size:14px;line-height:1.5}
+.footer-grid .brand{align-self:flex-start}
+.footer-grid .brand-logo{width:190px;max-height:58px}
+.footer-bottom{line-height:1.7}
+@media(max-width:980px){.brand-logo{width:188px;max-height:56px}.nav{gap:13px}}
+@media(max-width:640px){.brand{min-width:0}.brand-logo{width:174px;max-height:50px}.nav{display:none}.map,.map iframe{min-height:320px}.review-metrics div{padding:13px 8px}.review-metrics strong{font-size:13px}.review-metrics span{font-size:9px}.footer-grid .brand-logo{width:180px}.hero h1{max-width:13ch}}
+@media(prefers-reduced-motion:reduce){.floating-wa b{transition:none}.floating-wa:hover b{transform:none}}
