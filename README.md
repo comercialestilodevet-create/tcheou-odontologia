@@ -53,6 +53,10 @@ A qualidade é tratada como parte do produto, não como etapa final. O workflow 
 
 O projeto não deve inventar CRO, títulos, certificações, preços, horários, equipe, equipamentos, resultados clínicos ou promessas. Dados profissionais e ativos visuais devem ser confirmados pela clínica antes do lançamento público.
 
+## Imagens de alta resolução
+
+The site includes responsive WebP image sources and portrait/vertical artwork with 4K-class long-edge dimensions. See `docs/IMAGE_QUALITY.md` for source dimensions, output dimensions, and the distinction between upscaled output and native capture resolution.
+
 ## Deploy
 
 O projeto é estático e pode ser importado diretamente na Vercel. Não há necessidade de backend ou etapa de build.
