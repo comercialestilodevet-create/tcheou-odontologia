@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://tcheouodontologia.com.br/sitemap.xml
+# GitHub Pages preview only; page-level noindex stays in place until the approved production launch.
+Sitemap: https://comercialestilodevet-create.github.io/tcheou-odontologia/sitemap.xml
