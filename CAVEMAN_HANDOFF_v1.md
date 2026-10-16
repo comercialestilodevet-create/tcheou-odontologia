@@ -2,11 +2,11 @@
 
 APP: Tcheou Odontologia
 WORKSTREAM: GitHub-first finalization of premium/high-ticket landing page
-STATE: GITHUB PAGES RENDERING ISSUE DIAGNOSED AND ASSET PATH FIX COMMITTED; VERCEL NOT STARTED
-MODE: ADVANCE
+STATE: LOGO-BASED BRAND SYSTEM IMPLEMENTED; PALETTE, WORDMARK, FAVICON AND DOCUMENTATION UPDATED
+MODE: RESUME
 CANONICAL SOURCE: https://github.com/comercialestilodevet-create/tcheou-odontologia
 
-CURRENT VERSION / HEAD: 726a9efc102c6834cb0838e45671b6c652a83b46
+CURRENT VERSION / HEAD: 2698c53e860dd5f622113321ffbdd983133613f0
 BASE: master brief + full conversation history + current GitHub files
 BRANCH / ENV: main / static site
 PR / MR / TASK: none open
@@ -51,7 +51,7 @@ INVARIANTS:
 - Do not invent professional credentials or clinical claims.
 - Never declare a live deployment without evidence.
 
-NEXT: Refresh/verify GitHub Pages after propagation; continue visual QA only after CSS/assets load correctly.
+NEXT: Verify GitHub Pages after cache refresh; visually inspect logo fidelity and mobile header. If clinic supplies original vector master, replace working SVG redraw with official source.
 Final visual/content polish only if requested. Otherwise the next logical workstream is Vercel deployment after the GitHub release gate.
 
 VERIFY-FIRST:
